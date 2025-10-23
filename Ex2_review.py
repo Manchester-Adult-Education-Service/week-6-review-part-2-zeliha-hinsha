@@ -227,7 +227,9 @@ print("-------------------------------------------\n"
 # Print the username.
 #
 # Write your code below:
-
+firstname=input("Enter your first name :").lower()
+fav_num=int(input("What is your favourite number?"))
+print(f"Your first name is {firstname} and your favourite number is {fav_num} .")
 
 
 # Step 2:
@@ -238,6 +240,12 @@ print("-------------------------------------------\n"
 # Calculate and print the average score.
 #
 # Write your code below:
+test_num1=int(input("Enter first score :"))
+test_num2=int(input("Enter the second score :"))
+test_num3=int(input("Enter the third score :"))
+avg=int(test_num1+test_num2+test_num3)/3
+print(f"Average score is {avg}")
+
 
 
 
@@ -250,6 +258,12 @@ print("-------------------------------------------\n"
 # - below 50 → "Needs improvement."
 #
 # Write your code below:
+if avg>= 70:
+    print("Excellent!")
+elif 50<avg<69:
+    print("Good effort!")
+elif avg<50:
+    print("Needs improvement.")
 
 
 
