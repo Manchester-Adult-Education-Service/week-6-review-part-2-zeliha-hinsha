@@ -55,6 +55,9 @@ print("-------------------------------------------\n"
 # Print: "Welcome, <name>!"
 #
 # Write your code below:
+user_name=input("Enter your name :").strip()
+print(user_name)
+print("Welcome",user_name)
 
 
 
@@ -66,6 +69,8 @@ print("-------------------------------------------\n"
 # Print: "You are <age> years old — great to have you here!"
 #
 # Write your code below:
+age=int(input("what is your age?"))
+print(f"You are {age}  years old!")
 
 
 
@@ -100,7 +105,8 @@ print("-------------------------------------------\n"
 # Use .lower() on the input and store it in a variable called colour.
 #
 # Write your code below:
-
+color = input("What is your favorite color").lower()
+print(color)
 
 
 # Step 2:
@@ -112,6 +118,12 @@ print("-------------------------------------------\n"
 # - Otherwise → "That's a unique colour!"
 #
 # Write your code below:
+if color =="blue":
+    print("cool choice")
+elif color =="yellow":
+    print("bright and happy")
+else:
+    print("That's a unique colour!")
 
 
 
@@ -142,6 +154,10 @@ print("-------------------------------------------\n"
 # Convert it to an integer using int() and store it in a variable.
 #
 # Write your code below:
+number=int(input("enter a number between 1 to 10 :"))
+if  1<=number <=10:
+    print("Your lucky number is ",number)
+
 
 
 
@@ -154,6 +170,9 @@ print("-------------------------------------------\n"
 # 3 x 2 = 6
 #
 # Write your code below:
+usernumber=int(input("Enter a number between 1 to 10 :"))
+for i in range(1,11):
+    print(f"{usernumber} X {i} =",usernumber * i)
 
 
 
@@ -165,6 +184,12 @@ print("-------------------------------------------\n"
 # Use .lower() to make sure input like "YES" or "Yes" works.
 #
 # Write your code below:
+choose_num=input("Do you want to try another number?")
+if choose_num=="yes".lower():
+    second_num=int(input("Enter your another number :"))
+    for m in range(1,11):
+        print(f"{second_num} X {i} =",second_num*m)
+
 
 
 
@@ -202,7 +227,9 @@ print("-------------------------------------------\n"
 # Print the username.
 #
 # Write your code below:
-
+firstname=input("Enter your first name :").lower()
+fav_num=int(input("What is your favourite number?"))
+print(f"Your first name is {firstname} and your favourite number is {fav_num} .")
 
 
 # Step 2:
@@ -213,6 +240,12 @@ print("-------------------------------------------\n"
 # Calculate and print the average score.
 #
 # Write your code below:
+test_num1=int(input("Enter first score :"))
+test_num2=int(input("Enter the second score :"))
+test_num3=int(input("Enter the third score :"))
+avg=int(test_num1+test_num2+test_num3)/3
+print(f"Average score is {avg}")
+
 
 
 
@@ -225,6 +258,12 @@ print("-------------------------------------------\n"
 # - below 50 → "Needs improvement."
 #
 # Write your code below:
+if avg>= 70:
+    print("Excellent!")
+elif 50<avg<69:
+    print("Good effort!")
+elif avg<50:
+    print("Needs improvement.")
 
 
 
