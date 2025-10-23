@@ -154,6 +154,10 @@ print("-------------------------------------------\n"
 # Convert it to an integer using int() and store it in a variable.
 #
 # Write your code below:
+number=int(input("enter a number between 1 to 10 :"))
+if  1<=number <=10:
+    print("Your lucky number is ",number)
+
 
 
 
@@ -166,6 +170,9 @@ print("-------------------------------------------\n"
 # 3 x 2 = 6
 #
 # Write your code below:
+usernumber=int(input("Enter a number between 1 to 10 :"))
+for i in range(1,11):
+    print("Multiplication table ",usernumber * i)
 
 
 
@@ -177,6 +184,12 @@ print("-------------------------------------------\n"
 # Use .lower() to make sure input like "YES" or "Yes" works.
 #
 # Write your code below:
+choose_num=input("Do you want to try another number?")
+if choose_num=="yes".lower():
+    second_num=int(input("Enter your another number :"))
+    for m in range(1,11):
+        print("Multiplication table ",second_num*m)
+
 
 
 
