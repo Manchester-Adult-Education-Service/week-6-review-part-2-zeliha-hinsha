@@ -172,7 +172,7 @@ if  1<=number <=10:
 # Write your code below:
 usernumber=int(input("Enter a number between 1 to 10 :"))
 for i in range(1,11):
-    print("Multiplication table ",usernumber * i)
+    print(f"{usernumber} X {i} =",usernumber * i)
 
 
 
@@ -188,7 +188,7 @@ choose_num=input("Do you want to try another number?")
 if choose_num=="yes".lower():
     second_num=int(input("Enter your another number :"))
     for m in range(1,11):
-        print("Multiplication table ",second_num*m)
+        print(f"{second_num} X {i} =",second_num*m)
 
 
 
