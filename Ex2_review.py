@@ -105,7 +105,8 @@ print("-------------------------------------------\n"
 # Use .lower() on the input and store it in a variable called colour.
 #
 # Write your code below:
-
+color = input("What is your favorite color").lower()
+print(color)
 
 
 # Step 2:
@@ -117,6 +118,12 @@ print("-------------------------------------------\n"
 # - Otherwise → "That's a unique colour!"
 #
 # Write your code below:
+if color =="blue":
+    print("cool choice")
+elif color =="yellow":
+    print("bright and happy")
+else:
+    print("That's a unique colour!")
 
 
 
